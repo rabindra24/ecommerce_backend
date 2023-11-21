@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Field": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Head": {
+      "type": "enumeration",
+      "enum": [
+        "Policy",
+        "Contact",
+        "Products"
+      ]
+    }
+  }
+}

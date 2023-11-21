@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Amount": {
+      "type": "integer",
+      "required": true
+    },
+    "pincode": {
+      "type": "integer",
+      "required": true
+    },
+    "UID": {
+      "type": "integer",
+      "required": true
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cart.cart"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Confirmed",
+        "Shipped",
+        "Dilivered",
+        "Cancelled"
+      ],
+      "required": true,
+      "default": "Confirmed"
+    },
+    "Number": {
+      "type": "string",
+      "required": true
+    },
+    "payment_mod": {
+      "type": "string",
+      "required": true
+    },
+    "CID": {
+      "type": "string"
+    }
+  }
+}

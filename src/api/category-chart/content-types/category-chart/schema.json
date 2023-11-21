@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_charts",
+  "info": {
+    "singularName": "category-chart",
+    "pluralName": "category-charts",
+    "displayName": "category_chart"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
